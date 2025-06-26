@@ -3,7 +3,7 @@ import './Signup.css';
 import Logo from '../../components/logo/Logo';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSignup } from '../../hooks/signup/useSignup';
-import GlareHover from '../../components/animations/glarehover/Glarehover';
+import GlareHover from '../../components/animations/glarehover/GlareHover';
 import Ballpit from '../../components/animations/lightning/Ballpit';
 import { toast } from 'react-toastify';
 
