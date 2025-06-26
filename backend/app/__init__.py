@@ -2,15 +2,17 @@
 
 from flask import Flask
 from flask_cors import CORS
-from config import Config
 from app.utils.database import db  
+from config import Config
+import os
+
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-    CORS(app, origins=["FRONTEND_ORIGIN"], supports_credentials=True)
-
+    CORS(app, origins=[app.config['FRONTEND_ORIGIN']], supports_credentials=True)
+    
     db.init_app(app)
 
     # Import models to register them
