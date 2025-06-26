@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './ChatBot.css';
+import './Chatbot.css';
 import Logo from '../../components/logo/Logo';
 import Sidebar from '../../components/sidebar/Sidebar';
 import { useProducts } from '../../hooks/products/useProduct';
