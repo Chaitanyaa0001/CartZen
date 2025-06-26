@@ -1,0 +1,102 @@
+.sidebar-chat {
+  width: 250px;
+  background-color: #1f2937;
+  color: #f9fafb;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push logout to bottom */
+}
+
+.chat-history-list {
+  flex: 1;
+  margin: 1em 0em ;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+
+.history-msg {
+  background-color: #374151;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+  line-height: 1.3;
+  font-size: 0.85rem;
+}
+
+.history-msg.user {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.history-msg.bot {
+  background-color: #4b5563;
+}
+
+.msg-text {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.msg-time {
+  font-size: 0.7rem;
+  color: #d1d5db;
+  margin-top: 0.2rem;
+  text-align: right;
+}
+
+.chat-history-list {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0.5rem 0;
+  padding-right: 2px; /* Prevents content from hiding under scrollbar */
+}
+
+.empty-msg {
+  color: #9ca3af;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+/* Reset button styling remains the same */
+.reset-btn {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ✅ New Logout button styling */
+.logout-btn {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #4b5563;
+}

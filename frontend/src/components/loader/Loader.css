@@ -1,0 +1,57 @@
+/* src/components/Loader.css */
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: backgroundShift 10s ease infinite;
+}
+
+.purple-spinner {
+  width: 70px;
+  height: 70px;
+  border: 6px solid rgba(174, 83, 255, 0.2);
+  border-top: 6px solid #ae53ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, purpleGlow 2s ease-in-out infinite;
+  box-shadow: 0 0 20px #ae53ff;
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ae53ff, 0 0 20px #ae53ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes purpleGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px #ae53ff;
+  }
+  50% {
+    box-shadow: 0 0 35px #ae53ff;
+  }
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
