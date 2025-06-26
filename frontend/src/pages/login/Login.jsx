@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useLogin } from '../../hooks/login/useLogin';
 import GlareHover from '../../components/animations/glarehover/GlareHover';
 import Ballpit from '../../components/animations/lightning/Ballpit';
-import { useAuth } from '../../AuthContext/AuthContext';
+import { useAuth } from '../../AuthContext/useAuth';
 import { toast } from 'react-toastify';
 
 const Login = () => {
